@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">Logo</a>
         <ul>
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#About">About</a></li>
             <li><a href="#">Work</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -27,47 +30,33 @@
         <h2 id="text">Moon Light</h2>
         <a href="#sec" id="btn">Explore</a>
         <img src="images/mountains_front.png" id="mountains_front" alt="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     </section>
-    <div class="sec" id="sec">
-        <h2>Parallax Scrolling Effects</h2>
-        <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam cumque rerum veniam magni voluptate repellendus architecto consequuntur, ducimus quidem! Natus dolores corporis magni, saepe magnam animi eius sint aspernatur nemo!.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt asperiores officia fugiat est, itaque quam aliquam voluptatibus obcaecati non? Est consequatur a dolore cumque? Nulla dolorem doloribus omnis placeat.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, porro expedita reprehenderit iste sit modi laudantium reiciendis accusantium repudiandae ea beatae dicta, commodi dolore perspiciatis ipsum labore incidunt, praesentium magnam!
-        <br><br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam cumque rerum veniam magni voluptate repellendus architecto consequuntur, ducimus quidem! Natus dolores corporis magni, saepe magnam animi eius sint aspernatur nemo!.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt asperiores officia fugiat est, itaque quam aliquam voluptatibus obcaecati non? Est consequatur a dolore cumque? Nulla dolorem doloribus omnis placeat.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, porro expedita reprehenderit iste sit modi laudantium reiciendis accusantium repudiandae ea beatae dicta, commodi dolore perspiciatis ipsum labore incidunt, praesentium magnam!
-        <br><br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam cumque rerum veniam magni voluptate repellendus architecto consequuntur, ducimus quidem! Natus dolores corporis magni, saepe magnam animi eius sint aspernatur nemo!.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt asperiores officia fugiat est, itaque quam aliquam voluptatibus obcaecati non? Est consequatur a dolore cumque? Nulla dolorem doloribus omnis placeat.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, porro expedita reprehenderit iste sit modi laudantium reiciendis accusantium repudiandae ea beatae dicta, commodi dolore perspiciatis ipsum labore incidunt, praesentium magnam!
-        <br><br>
-        </p>
+    <div class="about-us" id="About">
+        <h1>About Us</h1>
+        <div class="aboutwrap">
+            <div class="aboutInfo">
+                <h2>Discover Our Journey</h2>
+                <h4>
+                    At Moon Light, we are captivated by the enchanting glow of the moon and the mysteries it holds. Our
+                    passion for celestial beauty inspired us to create a space where dreams meet reality.
+
+                    Founded on the belief that every night holds a story, Moon Light aims to illuminate your world with
+                    ethereal experiences. From innovative lunar-inspired designs to curated celestial adventures, we
+                    strive to bring the magic of the moon closer to you.</h4>
+                <button>Know More </button>
+            </div>
+            <div class="aboutImg">
+                <img src="images/aboutinfo-img.png" alt="">
+            </div>
+        </div>
+        
     </div>
 
-    <script>
-        let moon = document.getElementById('moon');
-        let stars = document.getElementById('stars');
-        let mountains_behind = document.getElementById('mountains_behind');
-        let text = document.getElementById('text');
-        let btn = document.getElementById('btn');
-        let mountains_front = document.getElementById('mountains_front');
-        let header = document.querySelector('header');
+    <script src="script.js"></script>
 
-
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY;
-            stars.style.left = value * 0.25 + 'px';
-            moon.style.top = value * 1.05 + 'px';
-            mountains_behind.style.top =value * 0.5 + 'px';
-            mountains_front.style.top =value * 0 + 'px';
-            text.style.marginRight = value * 4 + 'px';
-            text.style.marginTop = value * 1.5 + 'px';
-            btn.style.marginTop = value * 1.5 + 'px';
-            header.style.marginTop = value * 0.5 + 'px';
-        })
-    </script>
-    
 </body>
+
 </html>
